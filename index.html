@@ -5,38 +5,221 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <title>Belajar program</title>
+    <script src="https://kit.fontawesome.com/6340c19220.js" crossorigin="anonymous"></script>
+    <title>Portofolio</title>
   </head>
   <body>
-    <header>
-      <nav >
-        <p>Download app</p>
-        <p>mulai jualan</p>
-        <p>jadi mitra</p>
-        <p>BukaBantuan</p>
-      </nav>
-    </header>
-    <main>
-      <div class="main-menu">
-        <div class="main-bukalapak">
-          <img src="./bukalapak-logo-primary.svg" alt="">
-          <form>
-            <input type="text" placeholder="cari ..." required>
-            <input type="button" value="cari">
-          </form>
-          <p class="paraf-kategori">kategori</p>
-          <p class="paraf-produk">Produk virtual</p>
-          <span class="daftar">
-            <p class="paraf-daftar-1">Daftar</p>
-            <p class="paraf-daftar-2">Login</p>
-          </span>
+    <header id="header">
+      <div class="container">
+        <nav>
+          <img src="image/gilang.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Service</a></li>
+            <li><a href="#portofolio">Portofolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Fullstack Javascript</p>
+          <h1>
+            Hai,Perkenalkan Nama Saya
+            <span>Gilang</span>
+            <br />
+            Dari Indonesia.
+          </h1>
         </div>
       </div>
-      <hr>
-    </main>
-    <p id="demo1"></p>
-    <p id="demo"></p>
-    <button type="button" onclick="Myfunction()">click me..</button>
-    <script src="./index.js"></script>  
+    </header>
+    <!-- -----------about--------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="image/foto-profil-2.jpeg">
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit libero laboriosam quos sequi laudantium, maxime, dolorem provident non magnam animi impedit tempora at praesentium pariatur nihil aliquid delectus sed consectetur!</p>
+            <div class="tab-tiitle">
+              <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('Pengalaman')">Pengalaman</p>
+              <p class="tab-links" onclick="opentab('Pendidikan')">Pendidikan</p>
+            </div>
+            <div class="tab-contents active-tab" id="Skills">
+              <ul>
+                <li>
+                  <span>Fullstack Javascript</span>
+                  <br>
+                  HTML,CSS,JAVASCRIPT,React Js & Express Js
+                </li>
+                <li>
+                  <span>Web Development</span>
+                  <br>
+                  Web App Development
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Pengalaman">
+              <ul>
+                <li>
+                  <span>Maret 2023 - April 2023</span>
+                  <br>
+                  IT Support at PT.Maxplus Indonesia Anugerah
+                </li>
+                <li>
+                  <span>Juni 2022 - Oktober 2022</span>
+                  <br>
+                  Bootcamp Salt Academy
+                </li>
+                <li>
+                  <span>Januari 2022 - Juni 2022</span>
+                  <br>
+                  Teknisi Jaringan Mesin Antrian at PT.Jaya Informatika Solusindo
+                </li>
+                <li>
+                  <span>September 2019 - Agustus 2021</span>
+                  <br>
+                  Engineering at PT.Visionet Data Internasional
+                </li>
+            </div>
+            <div class="tab-contents" id="Pendidikan">
+              <ul>
+                <li>
+                  <span>2015 - 2018</span>
+                  <br>
+                  SMK Muhammadiyah 1 Jakarta Pusat
+                </li>
+                <li>
+                  <span>2012 - 2015</span>
+                  <br>
+                  SMP 79 Terbuka
+                </li>
+                <li>
+                  <span>2006 - 2012</span>
+                  <br>
+                  SDN 02 Harapan Mulia
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -----------services------------ -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Service</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt harum vel eligendi doloremque quae amet numquam porro delectus dicta quidem soluta tenetur repudiandae, obcaecati vero praesentium? Veniam pariatur explicabo reprehenderit!</p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>Fullstack Javascript</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt harum vel eligendi doloremque quae amet numquam porro delectus dicta quidem soluta tenetur repudiandae, obcaecati vero praesentium? Veniam pariatur explicabo reprehenderit!</p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Design</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt harum vel eligendi doloremque quae amet numquam porro delectus dicta quidem soluta tenetur repudiandae, obcaecati vero praesentium? Veniam pariatur explicabo reprehenderit!</p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -----------portofolio ------------ -->
+    <div id="portofolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="image/work-1.png" alt="">
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro hic ab nisi eligendi, cupiditate architecto. Laudantium, quia ratione aspernatur officiis quod aliquam dolor placeat voluptates dignissimos magni neque ducimus adipisci!</p>
+              <a href="#">
+                <i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i>              
+              </a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="image/work-2.png" alt="">
+            <div class="layer">
+              <h3>Music App</h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro hic ab nisi eligendi, cupiditate architecto. Laudantium, quia ratione aspernatur officiis quod aliquam dolor placeat voluptates dignissimos magni neque ducimus adipisci!</p>
+              <a href="#">
+                <i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i>          
+              </a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="image/work-3.png" alt="">
+            <div class="layer">
+              <h3>Online Shopping App</h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro hic ab nisi eligendi, cupiditate architecto. Laudantium, quia ratione aspernatur officiis quod aliquam dolor placeat voluptates dignissimos magni neque ducimus adipisci!</p>
+              <a href="#">
+                <i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+    <!-- ----------contact----------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact</h1>
+            <p>
+              <i class="fa-regular fa-paper-plane"></i>
+              gilangsos99@gmail.com
+            </p>
+            <p>
+              <i class="fa-solid fa-square-phone"></i>
+              089631119809
+            </p>
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="" download class="btn btn2">Download Cv</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="isi nama anda" required>
+              <input type="email" name="Email" placeholder="isi email anda" required>
+              <textarea name="Message" rows="6" placeholder="Kirim Pesan"></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <footer class="copyright">
+        <p>copyright &copy; Gilang.made width <i class="fa-solid fa-heart"></i> portofolio</p>
+      </footer>
+    </div>
+    <script src="./index.js"></script>
+    <script>
+      let sidemeu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemeu.style.right = '0';
+      }
+      function closemenu() {
+        sidemeu.style.right = '-200px';
+        sidemeu.style.transition = '1.5s'
+
+      }
+    </script>
   </body>
 </html>
