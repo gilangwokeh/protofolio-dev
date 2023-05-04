@@ -21,7 +21,7 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbz54Yx9LH60a9dXQUtOeS
       .then(response => {
         massage.innerHTML = "Kirim Pesan Berhasil", setTimeout(function(){
             massage.innerHTML =  ""   
-        },500)
+        },1000)
         form.reset()
       })
       .catch(error => console.error('Error!', error.message))
