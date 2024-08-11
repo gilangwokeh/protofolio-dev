@@ -178,15 +178,11 @@ nav ul li a:hover::after {
   margin-top: 50px;
 }
 .work {
-  border-radius: 10px;
-  position: relative;
-  overflow: hidden;
-}
-.work .img{
-  width: auto;
+  width: 100%;
   border-radius: 10px;
   display: block;
-  transition: transform 0.5s;
+  overflow: hidden; 
+  position: relative; 
 }
 .layer {
   width: 100%;
