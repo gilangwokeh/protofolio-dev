@@ -345,7 +345,7 @@ nav .fas {
     cursor: pointer;
   }
   .sub-title {
-    font-size: 40px;
+    font-size: 200%;
   }
   .about-col-1, .about-col-2 {
     flex-basis: 100%;
