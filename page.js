@@ -33,16 +33,16 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbz54Yx9LH60a9dXQUtOeS
   const searchResults = {
     1: [
         {
-            title: "CV Cintra Champion",
-            description: "Website ini hasil desain saya sesuai permintaan Customer untuk Bisnis Usaha Service Intisolar. Klik Lihat Hasil Website Pada icon di bawah ini:",
-            link: "https://serviceintisolar.co.id/",
-            image: "image/serviceIntisolar.png"
+            title: "Indihome Tangerang App",
+            description: "Website ini di buat untuk Promosi pemasang wifi di daerah Tangerang Sekitarnya.",
+            link: "https://indihome-tangerang.netlify.app/",
+            image: "image/indihome-tangerang.png"
         },
         {
-          title: "CV Cintra Champion",
-          description: "Website ini hasil desain saya sesuai permintaan Customer untuk Bisnis Usaha Service Intisolar. Klik Lihat Hasil Website Pada icon di bawah ini:",
-          link: "https://serviceintisolar.co.id/",
-          image: "image/serviceIntisolar.png"
+          title: "Indihome Jakarta Barat App",
+          description: "Website ini di buat untuk membantu Rekan Teman mempermudah mencari customer yang ingin pemasang indihome di jakarta barat sekitarnya.",
+          link: "https://indihome-jakarta-barat.netlify.app/",
+          image: "image/indihome-barat.png"
         },
         {
           title: "CV Cintra Champion",

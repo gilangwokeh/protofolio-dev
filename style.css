@@ -169,11 +169,10 @@ nav ul li a:hover::after {
 }
 /* --------portofolio---------- */
 #portofolio {
-  padding: 50px 0;
+  padding-top: 50px;
+  padding-bottom: 10px;
 }
-#portofolio2 {
-  padding: 50px 0;
-}
+
 .work-list {
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
@@ -386,7 +385,7 @@ nav .fas {
 @media screen and  (max-width: 600px) {
   .work img {
     width: 100%;
-    height: 300px;
+    height: 250px;
   }  
   .header-text {
     margin-top: 50%;
