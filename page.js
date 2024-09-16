@@ -91,7 +91,7 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbz54Yx9LH60a9dXQUtOeS
           image: "image/serviceIntisolar.png"
         }
     ]
-    // Add more pages as needed
+
 };
 
 
@@ -105,10 +105,7 @@ function loadResults(page) {
   
   // Populate the search results
   results.forEach(result => {
-      const resultDiv = document.createElement('div');
-      // resultDiv.id = 'portofolio';
-      resultDiv.classList.add('container');
-      resultDiv.classList.add('work-list');
+      const resultDiv = document.createElement('div');     
       resultDiv.classList.add('work');
       console.log(resultDiv.classList);
       // Create HTML structure for the result
