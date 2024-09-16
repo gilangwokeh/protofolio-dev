@@ -45,42 +45,42 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbz54Yx9LH60a9dXQUtOeS
           image: "image/indihome-barat.png"
         },
         {
-          title: "CV Cintra Champion",
-          description: "Website ini hasil desain saya sesuai permintaan Customer untuk Bisnis Usaha Service Intisolar. Klik Lihat Hasil Website Pada icon di bawah ini:",
-          link: "https://serviceintisolar.co.id/",
-          image: "image/serviceIntisolar.png"
+          title: "Pos Cafe App",
+          description: "Website ini di buat Keperluan Final Project di Bootchamp Salt Academy.",
+          link: "https://github.com/gilangwokeh/gilang_PosCafe_finalProject",
+          image: "image/pos-cafe.jpeg"
         },
         {
-          title: "CV Cintra Champion",
-          description: "Website ini hasil desain saya sesuai permintaan Customer untuk Bisnis Usaha Service Intisolar. Klik Lihat Hasil Website Pada icon di bawah ini:",
-          link: "https://serviceintisolar.co.id/",
-          image: "image/serviceIntisolar.png"
+          title: "Toko online",
+          description: "Website ini di buat keperluan jualan burung Bapak Saya.",
+          link: "https://burungdev.netlify.app/",
+          image: "image/toko-burung.png"
         }
     ],
     2: [
         {
-          title: "CV Cintra Champion",
-          description: "Website ini hasil desain saya sesuai permintaan Customer untuk Bisnis Usaha Service Intisolar. Klik Lihat Hasil Website Pada icon di bawah ini:",
-          link: "https://serviceintisolar.co.id/",
-          image: "image/serviceIntisolar.png"
+          title: "Gensakidz",
+          description: "Website ini hasil desain saya sesuai permintaan Customer untuk Pengembangkan Potensi Pertumbuhan Anak.",
+          link: "https://gensakidz.com/",
+          image: "image/gensakidz.png"
         },
         {
-          title: "CV Cintra Champion",
-          description: "Website ini hasil desain saya sesuai permintaan Customer untuk Bisnis Usaha Service Intisolar. Klik Lihat Hasil Website Pada icon di bawah ini:",
-          link: "https://serviceintisolar.co.id/",
-          image: "image/serviceIntisolar.png"
+          title: "LookArt Santri",
+          description: "Website ini hasil desain saya sesuai permintaan Customer untuk Pengembangkan Potensi Pertumbuhan Anak.",
+          link: "https://www.lookartsantri.com/",
+          image: "image/lookart.png"
         },
         {
-          title: "CV Cintra Champion",
-          description: "Website ini hasil desain saya sesuai permintaan Customer untuk Bisnis Usaha Service Intisolar. Klik Lihat Hasil Website Pada icon di bawah ini:",
-          link: "https://serviceintisolar.co.id/",
-          image: "image/serviceIntisolar.png"
+          title: "Bomohreal",
+          description: "Website ini hasil desain saya sesuai permintaan Customer untuk Pemersatuan Ikatan Jodoh.",
+          link: "https://bomohreal.com/",
+          image: "image/Bomo.png"
         },
         {
-          title: "CV Cintra Champion",
-          description: "Website ini hasil desain saya sesuai permintaan Customer untuk Bisnis Usaha Service Intisolar. Klik Lihat Hasil Website Pada icon di bawah ini:",
-          link: "https://serviceintisolar.co.id/",
-          image: "image/serviceIntisolar.png"
+          title: "jewelery kirania",
+          description: "Website ini hasil desain saya sesuai permintaan Customer untuk Toko Perhiasan Cantik dan Elegan.",
+          link: "https://jewelerykirania.web.id/",
+          image: "image/jewelery.png"
         }
     ],
     3: [

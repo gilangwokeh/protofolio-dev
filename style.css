@@ -349,8 +349,8 @@ nav .fas {
 .pagination-container {
   display: flex;
   justify-content: center;
-  padding: 10px;
-  background-color: #fff;
+  padding-top: 20px;
+  padding-bottom: 50px;
 }
 
 .pagination {
@@ -358,7 +358,7 @@ nav .fas {
   justify-content: space-between;
   padding: 10px;
   border: 1px solid #ddd;
-  background-color: #fff;
+  color: white;
   flex-wrap: wrap;
   max-width: 100%;
 }
@@ -367,7 +367,8 @@ nav .fas {
   margin: 5px;
   padding: 10px 15px;
   border: 1px solid #ddd;
-  color: #1a0dab;
+  color: white;
+  font-weight: bolder;
   text-decoration: none;
   font-size: 16px;
 }
@@ -379,7 +380,8 @@ nav .fas {
 }
 
 .pagination a:hover {
-  background-color: #ddd;
+  background-color: red;
+  color: white;
 }
 
 @media screen and  (max-width: 600px) {
