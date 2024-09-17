@@ -28,6 +28,8 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbz54Yx9LH60a9dXQUtOeS
   })
 
   // pagination
+
+  // Sample search results data for 5 pages
   const searchResults = {
     1: [
         {
@@ -96,7 +98,7 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbz54Yx9LH60a9dXQUtOeS
 // Function to load results for the current page
 function loadResults(page) {
   const resultsContainer = document.getElementById('search-results');
-  resultsContainer.innerHTML = '';  
+  resultsContainer.innerHTML = '';  // Clear previous results
 
   // Get the results for the current page
   const results = searchResults[page];
@@ -117,6 +119,9 @@ function loadResults(page) {
             </a>
           </div>
       `;
+      
+      // Append the result div to the results container
+      resultsContainer.appendChild(resultDiv);
   });
 }
 
