@@ -167,7 +167,7 @@ document.getElementById('next').addEventListener('click', (event) => {
   event.preventDefault();
   const activePage = document.querySelector('.pagination .active');
   const nextPage = parseInt(activePage.getAttribute('data-page')) + 1;
-  if (nextPage <= 3) {
+  if (nextPage <= 5) {
       loadResults(nextPage);
       updatePaginationActive(nextPage);
   }
