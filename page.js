@@ -28,8 +28,6 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbz54Yx9LH60a9dXQUtOeS
   })
 
   // pagination
-
-  // Sample search results data for 5 pages
   const searchResults = {
     1: [
         {
@@ -119,9 +117,6 @@ function loadResults(page) {
             </a>
           </div>
       `;
-      
-      // Append the result div to the results container
-      resultsContainer.appendChild(resultDiv);
   });
 }
 
