@@ -84,9 +84,15 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbz54Yx9LH60a9dXQUtOeS
     3: [
         {
           title: "CV Cintra Champion",
-          description: "Website ini hasil desain saya sesuai permintaan Customer untuk Bisnis Usaha Service Intisolar. Klik Lihat Hasil Website Pada icon di bawah ini:",
+          description: "Website ini hasil desain saya sesuai permintaan Customer untuk Bisnis Usaha Service Intisolar.",
           link: "https://serviceintisolar.co.id/",
           image: "image/serviceIntisolar.png"
+        },
+        {
+          title: "PT. Aliendra Nanjung Abada",
+          description: "Website ini hasil desain saya sesuai permintaan Customer untuk Bisnis penyediaan berbagai kebutuhan untuk proyek dan pertanian.",
+          link: "https://ptliendrananjungabada.com/",
+          image: "image/pupuk.png"
         }
     ]
 
