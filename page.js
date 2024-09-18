@@ -154,7 +154,6 @@ document.querySelectorAll('.page-number').forEach(page => {
   page.addEventListener('click', handlePageClick);
 });
 
-// Initial load
 loadResults(1);
 
 document.getElementById('prev').addEventListener('click', (event) => {
