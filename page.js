@@ -157,11 +157,12 @@ document.querySelectorAll('.page-number').forEach(page => {
 // Initial load
 loadResults(1);
 
-// Pagination for next and previous
 document.getElementById('prev').addEventListener('click', (event) => {
   event.preventDefault();
   const activePage = document.querySelector('.pagination .active');
   const prevPage = parseInt(activePage.getAttribute('data-page')) - 1;
+
+  // Tidak ada batas bawah, sehingga prevPage dapat mundur hingga halaman 1
   if (prevPage >= 1) {
       loadResults(prevPage);
       updatePaginationActive(prevPage);
@@ -172,7 +173,9 @@ document.getElementById('next').addEventListener('click', (event) => {
   event.preventDefault();
   const activePage = document.querySelector('.pagination .active');
   const nextPage = parseInt(activePage.getAttribute('data-page')) + 1;
-  if (nextPage <= 5) {
+
+  // Batas atas adalah halaman 3
+  if (nextPage <= 3) {
       loadResults(nextPage);
       updatePaginationActive(nextPage);
   }
