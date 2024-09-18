@@ -58,7 +58,7 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbz54Yx9LH60a9dXQUtOeS
     2: [
         {
           title: "Gensakidz",
-          description: "Website ini hasil desain saya sesuai permintaan Customer untuk Pengembangkan Potensi Pertumbuhan Anak.",
+          description: "Website ini hasil desain saya sesuai permintaan Customer untuk Toko Pengembangkan Potensi Pertumbuhan Anak.",
           link: "https://gensakidz.com/",
           image: "image/gensakidz.png"
         },
