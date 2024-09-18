@@ -90,8 +90,8 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbz54Yx9LH60a9dXQUtOeS
         },
         {
           title: "PT. Aliendra Nanjung Abada",
-          description: "Website ini hasil desain saya sesuai permintaan Customer untuk Bisnis penyediaan berbagai kebutuhan untuk proyek dan pertanian.",
-          link: "https://ptliendrananjungabada.com/",
+          description: "Website ini hasil desain saya sesuai permintaan Customer untuk Toko penyediaan berbagai kebutuhan untuk proyek dan pertanian.",
+          link: "https://ptaliendrananjungabada.com",
           image: "image/pupuk.png"
         }
     ]
@@ -161,7 +161,6 @@ document.getElementById('prev').addEventListener('click', (event) => {
   const activePage = document.querySelector('.pagination .active');
   const prevPage = parseInt(activePage.getAttribute('data-page')) - 1;
 
-  // Tidak ada batas bawah, sehingga prevPage dapat mundur hingga halaman 1
   if (prevPage >= 1) {
       loadResults(prevPage);
       updatePaginationActive(prevPage);
@@ -173,7 +172,6 @@ document.getElementById('next').addEventListener('click', (event) => {
   const activePage = document.querySelector('.pagination .active');
   const nextPage = parseInt(activePage.getAttribute('data-page')) + 1;
 
-  // Batas atas adalah halaman 3
   if (nextPage <= 3) {
       loadResults(nextPage);
       updatePaginationActive(nextPage);
