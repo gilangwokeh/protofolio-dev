@@ -396,7 +396,7 @@ nav .fas {
   font-weight: bold;
   white-space: nowrap;
   color: white;
-  animation: scroll 10s linear infinite, color-change 2s linear infinite;
+  animation: scroll 20s linear infinite, color-change 2s linear infinite;
 }
 
 @keyframes scroll {
@@ -466,7 +466,7 @@ nav .fas {
     font-size: 200%;
   }
   .marquee {
-    font-size: 150%;
+    font-size: 200%;
   }
   .about-col-1, .about-col-2 {
     flex-basis: 100%;
