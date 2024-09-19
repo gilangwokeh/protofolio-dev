@@ -322,7 +322,6 @@ form .btn2 {
   color: #ff004f;
 }
 
-/* ---------css for small media screen --------- */
 nav .fas {
   display: none;
 }
@@ -389,6 +388,44 @@ nav .fas {
   color: white;
 }
 
+/* teks warna warni */
+
+.marquee {
+  font-size: 3em;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  white-space: nowrap;
+  color: white;
+  animation: scroll 10s linear infinite, color-change 2s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+      transform: translateX(100%);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
+
+@keyframes color-change {
+  0% {
+      color: red;
+  }
+  25% {
+      color: yellow;
+  }
+  50% {
+      color: green;
+  }
+  75% {
+      color: blue;
+  }
+  100% {
+      color: purple;
+  }
+} 
+
 @media screen and  (max-width: 600px) {
   .work img {
     width: 100%;
@@ -428,7 +465,7 @@ nav .fas {
   .sub-title {
     font-size: 200%;
   }
-  .sub-title2 {
+  .marquee {
     font-size: 150%;
   }
   .about-col-1, .about-col-2 {
