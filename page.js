@@ -137,7 +137,6 @@ function handlePageClick(event) {
   }
 }
 
-// Function to update the active class on pagination
 function updatePaginationActive(activePage) {
   const pageNumbers = document.querySelectorAll('.page-number');
   pageNumbers.forEach(page => {
@@ -149,7 +148,7 @@ function updatePaginationActive(activePage) {
   });
 }
 
-// Add event listeners to pagination numbers
+
 document.querySelectorAll('.page-number').forEach(page => {
   page.addEventListener('click', handlePageClick);
 });
@@ -177,3 +176,22 @@ document.getElementById('next').addEventListener('click', (event) => {
       updatePaginationActive(nextPage);
   }
 });
+
+// scrooll arah bawah
+
+window.onscroll = function() {
+  var scrollTopBtn = document.getElementById("scrollTopBtn");
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      scrollTopBtn.style.display = "block";
+  } else {
+      scrollTopBtn.style.display = "none";
+  }
+};
+
+// Fungsi untuk scroll ke atas
+function scrollToTop() {
+  window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+  });
+}
