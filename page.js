@@ -99,14 +99,13 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbz54Yx9LH60a9dXQUtOeS
 };
 
 
-// Function to load results for the current page
+
 function loadResults(page) {
   const resultsContainer = document.getElementById('search-results');
   resultsContainer.innerHTML = '';  
 
   const results = searchResults[page];
   
-  // Populate the search results
   results.forEach(result => {
       const resultDiv = document.createElement('div');     
       resultDiv.classList.add('work');
@@ -125,14 +124,12 @@ function loadResults(page) {
   });
 }
 
-// Function to handle pagination click
+
 function handlePageClick(event) {
   event.preventDefault();
   const page = parseInt(event.target.getAttribute('data-page'));
   if (!isNaN(page)) {
-      // Load the selected page results
       loadResults(page);
-      // Update active state in pagination
       updatePaginationActive(page);
   }
 }
