@@ -68,46 +68,86 @@ nav ul li a:hover::after {
 #about {
   padding: 80px 0;
   color: #ababab;
+  opacity: 0; 
+  transform: translateY(50px); 
+  transition: opacity 5.6s ease-out, transform 5.6s ease-out; 
 }
+
+#about.show {
+  opacity: 1; 
+  transform: translateY(0); 
+}
+
 .row {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
+
 .about-col-1 {
   flex-basis: 35%;
 }
+
 .about-col-1 img {
   width: 100%;
   border-radius: 15px;
 }
+
 .about-col-2 {
   flex-basis: 60%;
 }
+
 .about-col-2 .sub-title {
   margin-bottom: 20px;
 }
+
 .sub-title {
   font-size: 60px;
   font-weight: 600;
   color: #fff;
 }
+
 .sub-title2 {
   font-size: 60px;
   font-weight: 600;
   color: #fff;
+  animation: color-change 10s infinite;
 }
+
+@keyframes color-change {
+  0% {
+    color: #ff0000;
+  }
+  25% {
+    color: #00ff00;
+  }
+  50% {
+    color: #0000ff;
+  }
+  60% {
+    color: white;
+  }
+  75% {
+    color: #ffff00;
+  }
+  100% {
+    color: #ff00ff;
+  }
+}
+
 .tab-tiitle {
   display: flex;
   margin: 20px 0 40px;
 }
-.tab-links{
+
+.tab-links {
   margin-right: 50px;
   font-size: 18px;
   font-weight: 500;
   cursor: pointer;
   position: relative;
 }
+
 .tab-links::after {
   content: '';
   width: 0;
@@ -118,34 +158,48 @@ nav ul li a:hover::after {
   bottom: -8px;
   transition: 0.5s;
 }
+
 .tab-links.active-link::after {
   width: 50%;
 }
+
 .tab-contents ul li {
   list-style: none;
   margin: 10px 0;
 }
+
 .tab-contents ul li span {
   color: red;
   font-size: 14px;
 }
+
 .tab-contents {
   display: none;
 }
-.tab-contents.active-tab{
-  display: block;
 
+.tab-contents.active-tab {
+  display: block;
 }
 /* ----------services ----------- */
-#services{
+#services {
   padding: 30px 0;
 }
+
 .services-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 40px;
   margin-top: 50px;
+  opacity: 0; 
+  transform: translateY(50px); 
+  transition: opacity 3.6s ease-out, transform 3.6s ease-out;
 }
+
+.services-list.show {
+  opacity: 1; 
+  transform: translateY(0); 
+}
+
 .services-list div {
   background: #262626;
   padding: 40px;
@@ -154,14 +208,17 @@ nav ul li a:hover::after {
   border-radius: 10px;
   transition: background 0.5s, transform 0.5s;
 }
+
 .services-list ul li {
   text-align: justify;
   margin-bottom: 10px;
 }
+
 .services-list div i {
   font-size: 50px;
   margin-bottom: 30px;
 }
+
 .services-list div h2 {
   font-size: 30px;
   font-weight: 500;
@@ -172,11 +229,21 @@ nav ul li a:hover::after {
   background: #ff004f;
   transform: translateY(-20px);
 }
+
 /* --------portofolio---------- */
 #portofolio {
   padding-top: 50px;
   padding-bottom: 10px;
+  opacity: 0; 
+  transition: opacity 3.6s ease-out, transform 3.6s ease-out;
+  transform: translateY(50px); 
 }
+
+#portofolio.visible {
+  opacity: 1; 
+  transform: translateY(0); 
+}
+
 
 .work-list {
   display: grid;
@@ -258,11 +325,20 @@ nav ul li a:hover::after {
 /* ---------------contact--------------- */
 .contact-left {
   flex-basis: 35%;
+  opacity: 0;
+  transition: opacity 3.6s ease-out, transform 3.6s ease-out;
+  transform: translateY(50px);
 }
-
 .contact-right {
   flex-basis: 60%;
+  opacity: 0;
+  transition: opacity 3.6s ease-out, transform 3.6s ease-out;
+  transform: translateY(50px);
 } 
+.contact-left.visible, .contact-right.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
 .contact-left p {
   margin-top: 30px;
 }
@@ -329,7 +405,16 @@ nav .fas {
 /* pagination */
 .search-results {
   margin-bottom: 20px;
+  opacity: 0; 
+  transition: opacity 3.6s ease-out, transform 3.6s ease-out;
+  transform: translateY(50px); 
 }
+
+.search-results.visible {
+  opacity: 1;
+  transform: translateY(0); 
+}
+
 
 .result {
   margin-bottom: 20px;
@@ -355,7 +440,16 @@ nav .fas {
   justify-content: center;
   padding-top: 20px;
   padding-bottom: 50px;
+  opacity: 0; 
+  transform: translateY(50px); 
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
+
+.pagination-container.visible {
+  opacity: 1; 
+  transform: translateY(0); 
+}
+
 
 .pagination {
   display: flex;

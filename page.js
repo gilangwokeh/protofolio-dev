@@ -99,7 +99,6 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbz54Yx9LH60a9dXQUtOeS
 };
 
 
-
 function loadResults(page) {
   const resultsContainer = document.getElementById('search-results');
   resultsContainer.innerHTML = '';  
@@ -174,8 +173,8 @@ document.getElementById('next').addEventListener('click', (event) => {
   }
 });
 
-// scrooll arah bawah
 
+// scrooll arah bawah
 window.onscroll = function() {
   var scrollTopBtn = document.getElementById("scrollTopBtn");
   if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
@@ -192,3 +191,67 @@ function scrollToTop() {
       behavior: "smooth"
   });
 }
+
+// service scroll
+
+window.addEventListener('scroll', function() {
+  const services = document.querySelector('.services-list');
+  const servicesPosition = services.getBoundingClientRect().top;
+  const screenPosition = window.innerHeight / 1.2;
+
+  if (servicesPosition < screenPosition) {
+    services.classList.add('show');
+  } else {
+    services.classList.remove('show');
+  }
+});
+
+
+//about scroll
+
+window.addEventListener('scroll', function() {
+  const aboutSection = document.getElementById('about');
+  const aboutPosition = aboutSection.getBoundingClientRect().top;
+  const screenPosition = window.innerHeight / 1.2;
+
+  if (aboutPosition < screenPosition) {
+    aboutSection.classList.add('show');
+  } else {
+    aboutSection.classList.remove('show');
+  }
+});
+
+
+//macam scroll = contact,pagination,about,portofolio,search-results
+document.addEventListener("DOMContentLoaded", function() {
+  // Opsi untuk Intersection Observer
+  let options = {
+    threshold: 0.1
+  };
+
+  // Membuat instance Intersection Observer
+  let observer = new IntersectionObserver(function(entries) {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+      } else {
+        entry.target.classList.remove("visible");
+      }
+    });
+  }, options);
+
+  // Target elemen yang ingin diobservasi
+  const targets = [
+    ...document.querySelectorAll(".contact-left, .contact-right"), // Kontak
+    document.getElementById('portofolio'), // Portofolio
+    document.querySelector('.pagination-container'), // Pagination
+    document.getElementById('search-results') // Search Results
+  ];
+
+  // Mengamati semua target
+  targets.forEach(target => {
+    if (target) { // Pastikan elemen ada
+      observer.observe(target);
+    }
+  });
+});
