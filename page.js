@@ -192,44 +192,33 @@ function scrollToTop() {
   });
 }
 
-// service scroll
-
+// macam scroll = about,service
 window.addEventListener('scroll', function() {
-  const services = document.querySelector('.services-list');
-  const servicesPosition = services.getBoundingClientRect().top;
-  const screenPosition = window.innerHeight / 1.2;
+  const sectionsToShow = [
+    { element: document.querySelector('.services-list'), className: 'show' },
+    { element: document.getElementById('about'), className: 'show' }
+  ];
 
-  if (servicesPosition < screenPosition) {
-    services.classList.add('show');
-  } else {
-    services.classList.remove('show');
-  }
+  sectionsToShow.forEach(section => {
+    if (section.element) {
+      const sectionPosition = section.element.getBoundingClientRect().top;
+      const screenPosition = window.innerHeight / 1.2;
+
+      if (sectionPosition < screenPosition) {
+        section.element.classList.add(section.className);
+      } else {
+        section.element.classList.remove(section.className);
+      }
+    }
+  });
 });
 
-
-//about scroll
-
-window.addEventListener('scroll', function() {
-  const aboutSection = document.getElementById('about');
-  const aboutPosition = aboutSection.getBoundingClientRect().top;
-  const screenPosition = window.innerHeight / 1.2;
-
-  if (aboutPosition < screenPosition) {
-    aboutSection.classList.add('show');
-  } else {
-    aboutSection.classList.remove('show');
-  }
-});
-
-
-//macam scroll = contact,pagination,about,portofolio,search-results
+//macam scroll = contact,pagination,portofolio,search-results
 document.addEventListener("DOMContentLoaded", function() {
-  // Opsi untuk Intersection Observer
   let options = {
     threshold: 0.1
   };
 
-  // Membuat instance Intersection Observer
   let observer = new IntersectionObserver(function(entries) {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -240,17 +229,17 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   }, options);
 
-  // Target elemen yang ingin diobservasi
+ 
   const targets = [
-    ...document.querySelectorAll(".contact-left, .contact-right"), // Kontak
-    document.getElementById('portofolio'), // Portofolio
-    document.querySelector('.pagination-container'), // Pagination
-    document.getElementById('search-results') // Search Results
+    ...document.querySelectorAll(".contact-left, .contact-right"), 
+    document.getElementById('portofolio'), 
+    document.querySelector('.pagination-container'), 
+    document.getElementById('search-results') 
   ];
 
-  // Mengamati semua target
+  
   targets.forEach(target => {
-    if (target) { // Pastikan elemen ada
+    if (target) { 
       observer.observe(target);
     }
   });
