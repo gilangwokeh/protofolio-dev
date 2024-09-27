@@ -70,7 +70,7 @@ nav ul li a:hover::after {
   color: #ababab;
   opacity: 0; 
   transform: translateY(50px); 
-  transition: opacity 5.6s ease-out, transform 5.6s ease-out; 
+  transition: opacity 1.6s ease-out, transform 1.6s ease-out; 
 }
 
 #about.show {
@@ -192,7 +192,7 @@ nav ul li a:hover::after {
   margin-top: 50px;
   opacity: 0; 
   transform: translateY(50px); 
-  transition: opacity 3.6s ease-out, transform 3.6s ease-out;
+  transition: opacity 1.6s ease-out, transform 1.6s ease-out;
 }
 
 .services-list.show {
@@ -235,7 +235,7 @@ nav ul li a:hover::after {
   padding-top: 50px;
   padding-bottom: 10px;
   opacity: 0; 
-  transition: opacity 3.6s ease-out, transform 3.6s ease-out;
+  transition: opacity 1.6s ease-out, transform 1.6s ease-out;
   transform: translateY(50px); 
 }
 
@@ -326,13 +326,13 @@ nav ul li a:hover::after {
 .contact-left {
   flex-basis: 35%;
   opacity: 0;
-  transition: opacity 3.6s ease-out, transform 3.6s ease-out;
+  transition: opacity 1.6s ease-out, transform 1.6s ease-out;
   transform: translateY(50px);
 }
 .contact-right {
   flex-basis: 60%;
   opacity: 0;
-  transition: opacity 3.6s ease-out, transform 3.6s ease-out;
+  transition: opacity 1.6s ease-out, transform 1.6s ease-out;
   transform: translateY(50px);
 } 
 .contact-left.visible, .contact-right.visible {
@@ -406,7 +406,7 @@ nav .fas {
 .search-results {
   margin-bottom: 20px;
   opacity: 0; 
-  transition: opacity 3.6s ease-out, transform 3.6s ease-out;
+  transition: opacity 1.6s ease-out, transform 1.6s ease-out;
   transform: translateY(50px); 
 }
 
@@ -442,7 +442,7 @@ nav .fas {
   padding-bottom: 50px;
   opacity: 0; 
   transform: translateY(50px); 
-  transition: opacity 3.6s ease-out, transform 3.6s ease-out;
+  transition: opacity 1.6s ease-out, transform 1.6s ease-out;
 }
 
 .pagination-container.visible {
