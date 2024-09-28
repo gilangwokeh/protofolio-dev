@@ -110,30 +110,21 @@ nav ul li a:hover::after {
 .sub-title2 {
   font-size: 60px;
   font-weight: 600;
-  color: #fff;
-  animation: color-change 10s infinite;
+  background: linear-gradient(270deg,#1a0dab,#fff,#ff004f, #ff7f50, #1e90ff, #32cd32, #ff69b4, #ff7f50);
+  background-size: 400% 400%;
+  -webkit-background-clip: text; 
+  background-clip: text; 
+  -webkit-text-fill-color: transparent;
+  animation: gradientText 5s ease infinite;
 }
 
-@keyframes color-change {
-  0% {
-    color: #ff0000;
-  }
-  25% {
-    color: #00ff00;
-  }
-  50% {
-    color: #0000ff;
-  }
-  60% {
-    color: white;
-  }
-  75% {
-    color: #ffff00;
-  }
-  100% {
-    color: #ff00ff;
-  }
+
+@keyframes gradientText {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
+
 
 .tab-tiitle {
   display: flex;
