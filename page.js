@@ -93,6 +93,12 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbz54Yx9LH60a9dXQUtOeS
           description: "Website ini hasil desain saya sesuai permintaan Customer untuk Toko penyediaan berbagai kebutuhan untuk proyek dan pertanian.",
           link: "https://ptaliendrananjungabada.com",
           image: "image/pupuk.png"
+        },
+        {
+          title: "Psikotest Hrd",
+          description: "Website Psikotest untuk Test Kemamuan Pelamar.",
+          link: "https://psikotest-hrd.vercel.app/",
+          image: "image/Psikotest.png"
         }
     ]
 
