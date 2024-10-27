@@ -99,6 +99,12 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbz54Yx9LH60a9dXQUtOeS
           description: "Website Psikotest untuk Test Kemamuan Pelamar.",
           link: "https://psikotest-hrd.vercel.app/",
           image: "image/Psikotest.png"
+        },
+        {
+          title: "Erp iventory",
+          description: "Website iventory Masih Pengembang.",
+          link: "https://erpnow.netlify.app/",
+          image: "image/erp.png"
         }
     ]
 
@@ -117,7 +123,7 @@ function loadResults(page) {
       resultDiv.innerHTML = `
           <img src="${result.image}" alt="">
           <div class="layer">
-            <h3>${result.title}</h3>
+            <h3 class="layer-judul">${result.title}</h3>
             <p>${result.description}<br><br>Klik Lihat Hasil Website Pada icon di bawah ini:</p>
             <a href="${result.link}" target="_blank">
               <i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i>

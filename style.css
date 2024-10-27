@@ -426,6 +426,11 @@ nav .fas {
   color: #4d5156;
 }
 
+.layer .layer-judul {
+  font-weight: bold;
+  font-family: "Roboto" , sans-serif;
+}
+
 .pagination-container {
   display: flex;
   justify-content: center;
