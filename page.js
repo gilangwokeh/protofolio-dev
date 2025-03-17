@@ -101,10 +101,10 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbz54Yx9LH60a9dXQUtOeS
           image: "image/Psikotest.png"
         },
         {
-          title: "Erp iventory",
-          description: "Website iventory Masih Pengembang.",
-          link: "https://erpnow.netlify.app/",
-          image: "image/erp.png"
+          title: "Poles Marmer",
+          description: "Website ini hasil desain saya sesuai permintaan Customer untuk Toko penyediaan berbagai kebutuhan untuk poles marmer.",
+          link: "https://poles-marmer.com/",
+          image: "image/poles-marmer.png"
         }
     ]
 
