@@ -120,6 +120,18 @@ const searchResults = {
       link: "https://bomohpengasihreal.com/",
       image: "image/rawatan-pengasih.png"
     },
+    {
+      title: "freeflowater",
+      description: "Website ini hasil desain saya sesuai permintaan Customer untuk freefloowater",
+      link: "https://freeflowater.co.id/",
+      image: "image/freeflowater.png"                     
+    },
+    {
+      title: "Multi Indo CCTV",
+      description: "Website ini hasil desain saya sesuai permintaan Customer untuk jasa CCTV",
+      link: "https://multiindocctv.com/",
+      image: "image/multiindocctv.png"
+    },
   ]
 
 };
