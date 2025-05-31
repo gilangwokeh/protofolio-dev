@@ -212,16 +212,6 @@ document.getElementById('next').addEventListener('click', (event) => {
 });
 
 
-// scrooll arah bawah
-window.onscroll = function () {
-  var scrollTopBtn = document.getElementById("scrollTopBtn");
-  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-    scrollTopBtn.style.display = "block";
-  } else {
-    scrollTopBtn.style.display = "none";
-  }
-};
-
 // Fungsi untuk scroll ke atas
 function scrollToTop() {
   window.scrollTo({
